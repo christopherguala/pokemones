@@ -1,15 +1,27 @@
 <script setup>
-import BuscadorPokemon from './components/BuscadorPokemon.vue';
-import Eventos from './components/Eventos.vue';
-import Formulario from './components/Formulario.vue';
-import Modificadores from './components/Modificadores.vue';
 import Pokeapi from './components/Pokeapi.vue';
 </script>
 
 <template>
- <Pokeapi />
+  <div id="app">
+    <Pokeapi />
+  </div>
 </template>
 
-
 <style>
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Poppins', sans-serif;
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  min-height: 100vh;
+}
+
+#app {
+  min-height: 100vh;
+}
 </style>
